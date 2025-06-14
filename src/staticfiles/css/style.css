@@ -1,0 +1,85 @@
+/* Import de la police Google - Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Import du fichier reset */
+@import "reset.css";
+
+/* Style général */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: mintcream;
+}
+
+/* Barre de navigation */
+nav {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section blog */
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#blog article {
+    width: 50%;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    #blog article {
+        width: 85%;
+    }
+}
+
+.post-title {
+    display: flex;
+    align-items: center;
+}
+
+.post-title a {
+    color: steelblue;
+    text-dexoration: none;
+    margin-left: .5rem;
+}
+
+.post-title a:last-child {
+    color: red;
+}
+.post-title > div {
+    margin-left: auto;
+}
+
+.post-author {
+    margin: .5rem 0;
+}
+
+.post-excerpt {
+    margin-bottom: 1rem;
+}
+
+.post(detail{
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+}
+
+.post-detail > h1 {
+    text-transform : uppercase;
+    margin-bottom:1rem;
+}
+
+input, textarea {
+    display: block;
+    padding: 75rem;
+    line-height:1.5;
+    font-size 1rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    min-width: 600px;
+}

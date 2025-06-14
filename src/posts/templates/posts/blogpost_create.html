@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     <title>Ajout Article</title>
+{% endblock %}
+
+
+{% block content %}
+    <h1>Ajout Article</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Créer">
+    </form>
+{% endblock %}
